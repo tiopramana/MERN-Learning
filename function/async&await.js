@@ -35,18 +35,18 @@ function goToHomePage(cek) {
 
 // Async/Await
 
-// async function LoginAsync() {
-//   try {
-//     const response = await login();
-//     console.log("Validated Data");
-//     const cek = await goToHomePage(response);
-//     console.log(cek);
-//   } catch (err) {
-//     console.error(err);
-//   }
-// }
+async function LoginAsync() {
+  try {
+    const response = await login();
+    console.log("Validated Data");
+    const cek = await goToHomePage(response);
+    console.log(cek);
+  } catch (err) {
+    console.error(err);
+  }
+}
 
-// LoginAsync();
+LoginAsync();
 
 const makeApiCall = (time) => {
   return new Promise((resolve, reject) => {
